@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_height="match_parent">
+
+    <com.example.task12drawoverotherapp.FilterImageView
+        android:id="@+id/filterImageView"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_margin="16dp" />
+
+    <Button
+        android:id="@+id/btnPorterDuff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PorterDuff Red" />
+
+    <Button
+        android:id="@+id/btnLighting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lighting Yellow" />
+
+    <Button
+        android:id="@+id/btnBlendMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BlendMode Green" />
+</LinearLayout>

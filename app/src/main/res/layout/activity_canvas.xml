@@ -1,0 +1,187 @@
+<!--for  drawing on clcik-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/shapeButtons"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="#EEEEEE">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <Button android:id="@+id/circleBtn"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+
+            android:text="Circle"/>
+        <Button android:id="@+id/lineBtn"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Line"/>
+        <Button android:id="@+id/triangleBtn"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Triangle"/>
+        <Button android:id="@+id/pointBtn"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Point"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+
+        <Button android:id="@+id/rectBtn"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Rectangle"/>
+        <Button android:id="@+id/roundRectBtn"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Round Rectangle"/>
+        <Button android:id="@+id/ovalBtn"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Oval"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button android:id="@+id/arcBtn"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Arc"/>
+        <Button android:id="@+id/btnStar"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="⭐ Star" />
+        <Button android:id="@+id/btnHeart"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="❤️ Heart" />
+        <Button android:id="@+id/btnWave"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="🌊 Wave" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button android:id="@+id/btnPolygon"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="⬟ Polygon" />
+
+            <Button android:id="@+id/btnQuadratic"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Quad Bezier" />
+            <Button android:id="@+id/btnCubic"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Cubic Bezier" />
+
+        </LinearLayout>
+        <Button android:id="@+id/clearBtn"
+            android:layout_height="wrap_content"
+            android:layout_width="250dp"
+            android:text="Clear"/>
+    </LinearLayout>
+
+    <com.example.task12drawoverotherapp.DrawingCanvasView
+        android:id="@+id/drawingView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#FFFFFF"/>
+
+</LinearLayout>
+<!--
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="40dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+
+            android:orientation="vertical">
+            <Button android:id="@+id/circleBtn"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+
+                android:text="Circle"/>
+            <Button android:id="@+id/lineBtn"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Line"/>
+            <Button android:id="@+id/triangleBtn"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Triangle"/>
+            <Button android:id="@+id/pointBtn"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Point"/>
+
+
+            <Button android:id="@+id/rectBtn"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Rectangle"/>
+            <Button android:id="@+id/roundRectBtn"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Round Rectangl"/>
+            <Button android:id="@+id/clearBtn"
+                android:layout_height="wrap_content"
+                android:layout_width="250dp"
+                android:text="Clear"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+&lt;!&ndash;
+
+    <TextView
+        android:id="@+id/cornerLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Corner Radius: 50" />
+&ndash;&gt;
+
+ &lt;!&ndash;   <SeekBar
+        android:id="@+id/cornerSeek"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progress="50" />&ndash;&gt;
+
+    <com.example.task12drawoverotherapp.MyCanvasView
+        android:id="@+id/drawingView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#FFFFFF"/>
+</LinearLayout>
+-->
