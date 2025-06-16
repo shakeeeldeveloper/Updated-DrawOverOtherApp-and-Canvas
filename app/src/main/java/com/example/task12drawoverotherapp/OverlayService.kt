@@ -26,7 +26,6 @@ class OverlayService : Service() {
         super.onCreate()
         windowManager = getSystemService(WINDOW_SERVICE) as WindowManager
         showFloatingIcon()
-        //ok
     }
 
 
